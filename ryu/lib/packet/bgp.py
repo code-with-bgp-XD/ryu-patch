@@ -5353,7 +5353,7 @@ class BGPOpen(BGPMessage):
                                     self.version,
                                     self.my_as,
                                     self.hold_time,
-                                    addrconv.ipv4.text_to_bin(
+                                    addrconv.ipv6.text_to_bin(
                                         self.bgp_identifier),
                                     self.opt_param_len))
         msg += binopts
